@@ -1,7 +1,7 @@
 # CYFRAM
 ### Cypress F-RAM Master Library for Arduino
 
-The library supports **F-RAM** (*Ferroelectric RAM*) **I2C and SPI APIs** provided with the development kit *CY15FRAMKIT-001*. They where assembled as an Arduino library and support generic memory access.
+The library supports **F-RAM** (*Ferroelectric RAM*) **I2C and SPI APIs** provided with the development kit *CY15FRAMKIT-001*. They where assembled as an Arduino library to support generic Cypress F-RAM memories.
 
 - The **I2C APIs** include initialization of block, write, current read and random read
 
