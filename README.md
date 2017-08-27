@@ -1,5 +1,5 @@
 # CYFRAM
-Cypress **F-RAM Master Library for Arduino**
+### Cypress F-RAM Master Library for Arduino
 
 The library supports **F-RAM** (*Ferroelectric RAM*) **I2C and SPI APIs** provided with the development kit *CY15FRAMKIT-001*. They where assembled as an Arduino library and support generic memory access.
 
@@ -18,7 +18,7 @@ Two sketches within the *CY15FRAMKIT-001 Kit Setup* had been modified and analys
 
 - **FRAM_SPI_Example_2.ino:** This sketch was used to test **FM25W256, 256-Kbit (32K x 8) Serial (SPI) F-RAM**
 
-All test results are part of this distribution and reside in the folders **logic** and **output**. Although other Cypress F-RAMs are not tested yet they should work until a size of 2MB (2 bytes address). Please send test result of other memories.
+All test results are part of this distribution and reside in the folders **logic** and **output**. Although other Cypress F-RAMs are not tested yet they should work until a size of 512-Kbit (64K x 8). Please send test result of other memories.
 
 ## More
 
@@ -30,9 +30,8 @@ http://www.cypress.com/documentation/development-kitsboards/cy15framkit-001-seri
 - *CY15FRAMKIT-001 Kit Setup (CY15FRAMKIT-001 Kit Setup - Kit Design Files,Documentation, Examples):*
 http://www.cypress.com/file/278596/download
 
-Links tested: 2017-08-27
-
-
+Links valid on 2017-08-27
+ 
 <code> 
 version=1.0.0
 </code>
