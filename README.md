@@ -1,7 +1,7 @@
 # CYFRAM
 ### Cypress F-RAM Master Library for Arduino
 
-**F-RAMs** (*Ferroelectric RAMs*) are *nonvolatile RAMs* with very high endurance (exceeding from 10^12 to 10^14 up to 10^16 read/write cycles).
+**F-RAMs** (*Ferroelectric RAMs*) are *nonvolatile RAMs* with very high endurance (exceeding from 10^12 to 10^14 up to 10^16 read/write cycles **per byte**. F-RAMs stores in byte-mode unlike block-mode of flash memories).
 
 This library supports **I2C and SPI APIs** provided with the development kit *CY15FRAMKIT-001*. They where assembled as a lean all-in-one Arduino library to support generic Cypress F-RAM memories.
 
