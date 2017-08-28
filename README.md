@@ -12,7 +12,7 @@ This library supports **I2C and SPI APIs** provided with the development kit *CY
 
 Arduino standard libraries *Wire* and *SPI*  will be used for best MCU HW support.
 
-Memory spefic functions like vendor-IDs, sleep, etc. and memory pins /W and /HOLD are not supported in this version. 
+Chip specific functions like vendor-IDs, sleep-mode, etc. or pin-handling for /W and /HOLD are not supported in this version. 
 
 
 ## Examples 
