@@ -24,7 +24,9 @@ Two sketches within the *CY15FRAMKIT-001 Kit Setup* had been modified and analys
 
 All test results are part of this distribution and reside in the folders **logic** and **output**. 
 
-Although other Cypress F-RAMs are not tested yet they should work until a size of 512-Kbit (64K x 8). Larger memories with 3 byte adress are not supported until yet. Grateful if you can send results of other tested memories. 
+Although other Cypress F-RAMs are not tested yet they should work with 2-byte addressing. Grateful if you can send results of tested F-RAM memories.
+
+Larger F-RAM memories with 3-byte adressing are not supported until yet.  
 
 ## More
 
