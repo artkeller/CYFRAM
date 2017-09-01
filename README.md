@@ -1,3 +1,4 @@
+
 # CYFRAM
 
 ### Cypress F-RAM Master Library for Arduino
@@ -34,6 +35,8 @@ Larger F-RAM memories with 3-byte adressing are not supported until yet.
 - *Ferroelectric RAM:* https://en.wikipedia.org/wiki/Ferroelectric_RAM
 
 - *nonvolatile RAMs (NVRAM):* https://en.wikipedia.org/wiki/Non-volatile_memory
+
+- *F-RAM (Nonvolatile Ferroelectric RAM):* http://www.cypress.com/products/f-ram-nonvolatile-ferroelectric-ram
 
 - *CY15FRAMKIT-001:* 
 http://www.cypress.com/documentation/development-kitsboards/cy15framkit-001-serial-f-ram-development-kit-guide
