@@ -41,12 +41,12 @@ Larger F-RAM memories with 3-byte adressing are not supported until yet.
 http://www.cypress.com/documentation/development-kitsboards/cy15framkit-001-serial-f-ram-development-kit-guide
 
 - *CY15FRAMKIT-001 Kit Setup (CY15FRAMKIT-001 Kit Setup - Kit Design Files,Documentation, Examples):*
-http://www.cypress.com/file/278596/download
+http://www.cypress.com/file/278596/download (You must log in or register to access this page)
 
-Links valid on 2017-08-27
+Links valid on 2018-09-09
 
 #### Comments are welcome
  
 <code> 
-version=1.0.0
+version=1.0.1
 </code>
