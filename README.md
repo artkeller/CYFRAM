@@ -43,7 +43,7 @@ http://www.cypress.com/documentation/development-kitsboards/cy15framkit-001-seri
 - *CY15FRAMKIT-001 Kit Setup (CY15FRAMKIT-001 Kit Setup - Kit Design Files,Documentation, Examples):*
 http://www.cypress.com/file/278596/download (You must log in or register to access this page)
 
-Links valid on 2018-09-09
+Links valid on 2019-02-24
 
 #### Comments are welcome
  
