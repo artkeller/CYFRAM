@@ -56,7 +56,9 @@ Links valid on 2022-10-22
 Invalid original link - not directly supported by Infineon but forwarded somehow
 
 - *CY15FRAMKIT-001 Kit Setup (CY15FRAMKIT-001 Kit Setup - Kit Design Files,Documentation, Examples):*
-http://www.cypress.com/file/278596/download (You must log in or register to access this page) 
+http://www.cypress.com/file/278596/download (You must log in or register to access this page) -> *CE209976 – SPI Slave Select Inversion with
+Smart IO®:*
+https://www.infineon.com/dgdl/Infineon-CE209976_SPI_Slave_Select_Inversion_with_Smart_I_O-Code+Example-v01_00-EN.pdf?fileId=8ac78c8c7cdc391c017d0d7f6b705028
 
 #### Comments are welcome
  
