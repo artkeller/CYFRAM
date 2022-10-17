@@ -45,6 +45,9 @@ http://www.cypress.com/file/278596/download (You must log in or register to acce
 
 Links valid on 2019-02-24
 
+- *Infineon Technologies AG completes acquisition of Cypress Semiconductor Corporation):*
+https://www.infineon.com/cms/en/about-infineon/press/press-releases/2020/INFXX202004-049.html
+
 #### Comments are welcome
  
 <code> 
