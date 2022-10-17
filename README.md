@@ -27,7 +27,13 @@ All test results are part of this distribution and reside in the folders **logic
 
 Although other Cypress F-RAMs are not tested yet memories with 2-byte addressing should work. Grateful if you can send results of tested F-RAM memories (of different vendors if feasable).
 
-Larger F-RAM memories with 3-byte adressing are not supported until yet.  
+Larger F-RAM memories with 3-byte adressing are not supported until yet.
+
+## UPDATE: Infineon aquired Cypress
+
+2019: Infineon has announced the acquisition of Cypress Semiconductors in order to push further into the automotive, industrial, and Internet of Things (IoT) hardware markets.
+
+2020: Infineon Technologies AG announced the Closing of the acquisition of Cypress Semiconductor Corporation. The San José-based company has become part of Infineon effective as of the Closing.
 
 ## More
 
@@ -37,6 +43,9 @@ Larger F-RAM memories with 3-byte adressing are not supported until yet.
 
 - *Infineon Technologies AG completes acquisition of Cypress Semiconductor Corporation):*
 https://www.infineon.com/cms/en/about-infineon/press/press-releases/2020/INFXX202004-049.html
+
+- *Infineon and Cypress: Strengthening the link between the real and the digital world, September 2019*
+https://www.infineon.com/dgdl/2019-09-16+Acquisition+of+Cypress.pdf?fileId=5546d4616b056b50016b1ba6930f0000
 
 - *F-RAM (Nonvolatile Ferroelectric RAM):* https://www.infineon.com/cms/en/product/memories/f-ram-ferroelectric-ram/ 
 
