@@ -38,18 +38,25 @@ Larger F-RAM memories with 3-byte adressing are not supported until yet.
 - *Infineon Technologies AG completes acquisition of Cypress Semiconductor Corporation):*
 https://www.infineon.com/cms/en/about-infineon/press/press-releases/2020/INFXX202004-049.html
 
-Links valid on 20122-10-22
+- *F-RAM (Nonvolatile Ferroelectric RAM):* https://www.infineon.com/cms/en/product/memories/f-ram-ferroelectric-ram/ 
 
-- *F-RAM (Nonvolatile Ferroelectric RAM):* http://www.cypress.com/products/f-ram-nonvolatile-ferroelectric-ram
+- *CY15FRAMKIT-001:* 
+https://www.infineon.com/cms/en/product/evaluation-boards/cy15framkit-001/
+
+Outdated original links - Supported by Infineon since 2020
+
+- *F-RAM (Nonvolatile Ferroelectric RAM):*  
+http://www.cypress.com/products/f-ram-nonvolatile-ferroelectric-ram
 
 - *CY15FRAMKIT-001:* 
 http://www.cypress.com/documentation/development-kitsboards/cy15framkit-001-serial-f-ram-development-kit-guide
 
+Links valid on 2022-10-22
+
+Invalid original link - not directly supported by Infineon but forwarded somehow
+
 - *CY15FRAMKIT-001 Kit Setup (CY15FRAMKIT-001 Kit Setup - Kit Design Files,Documentation, Examples):*
-http://www.cypress.com/file/278596/download (You must log in or register to access this page)
-
-Links valid on 2019-02-24
-
+http://www.cypress.com/file/278596/download (You must log in or register to access this page) 
 
 #### Comments are welcome
  
