@@ -41,11 +41,11 @@ Larger F-RAM memories with 3-byte adressing are not supported until yet.
 
 - *nonvolatile RAMs (NVRAM):* https://en.wikipedia.org/wiki/Non-volatile_memory
 
-- *Infineon Technologies AG completes acquisition of Cypress Semiconductor Corporation):*
-https://www.infineon.com/cms/en/about-infineon/press/press-releases/2020/INFXX202004-049.html
-
 - *Infineon and Cypress: Strengthening the link between the real and the digital world, September 2019*
 https://www.infineon.com/dgdl/2019-09-16+Acquisition+of+Cypress.pdf?fileId=5546d4616b056b50016b1ba6930f0000
+
+- *Infineon Technologies AG completes acquisition of Cypress Semiconductor Corporation):*
+https://www.infineon.com/cms/en/about-infineon/press/press-releases/2020/INFXX202004-049.html
 
 - *F-RAM (Nonvolatile Ferroelectric RAM):* https://www.infineon.com/cms/en/product/memories/f-ram-ferroelectric-ram/ 
 
