@@ -51,9 +51,9 @@ http://www.cypress.com/products/f-ram-nonvolatile-ferroelectric-ram
 - *CY15FRAMKIT-001:* 
 http://www.cypress.com/documentation/development-kitsboards/cy15framkit-001-serial-f-ram-development-kit-guide
 
-Links valid on 2022-10-22
+#### Links valid on 2022-10-22
 
-Invalid original link - not directly supported by Infineon but forwarded somehow
+Invalid original link - not directly supported by Infineon, but somehow forwarded
 
 - *CY15FRAMKIT-001 Kit Setup (CY15FRAMKIT-001 Kit Setup - Kit Design Files,Documentation, Examples):*
 http://www.cypress.com/file/278596/download (You must log in or register to access this page) -> *CE209976 – SPI Slave Select Inversion with
