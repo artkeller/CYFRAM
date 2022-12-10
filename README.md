@@ -52,16 +52,16 @@ https://www.infineon.com/cms/en/about-infineon/press/press-releases/2020/INFXX20
 - *CY15FRAMKIT-001:* 
 https://www.infineon.com/cms/en/product/evaluation-boards/cy15framkit-001/
 
-Invalid original link - not directly supported by Infineon, but somehow forwarded
+### Invalid original link - not directly supported by Infineon, but somehow forwarded
 
 - *CY15FRAMKIT-001 Kit Setup (CY15FRAMKIT-001 Kit Setup - Kit Design Files,Documentation, Examples):*
 (http://www.cypress.com/file/278596/download  - you must log in or register to access this page) 
 -> *CE209976 – SPI Slave Select Inversion with Smart IO®:*
 https://www.infineon.com/dgdl/Infineon-CE209976_SPI_Slave_Select_Inversion_with_Smart_I_O-Code+Example-v01_00-EN.pdf?fileId=8ac78c8c7cdc391c017d0d7f6b705028
 
-#### links mentioned above are valid since 2022-10-22
+#### Links mentioned above are valid since 2022-10-22
 
-Outdated original links - Supported by Infineon since 2020
+### Outdated original links - Supported by Infineon since 2020
 
 - *F-RAM (Nonvolatile Ferroelectric RAM):*  
 http://www.cypress.com/products/f-ram-nonvolatile-ferroelectric-ram
@@ -69,7 +69,7 @@ http://www.cypress.com/products/f-ram-nonvolatile-ferroelectric-ram
 - *CY15FRAMKIT-001:* 
 http://www.cypress.com/documentation/development-kitsboards/cy15framkit-001-serial-f-ram-development-kit-guide
 
-#### links mentioned above are valid since 2020
+#### Links mentioned above are valid since 2020
 
 
 #### Comments are welcome
