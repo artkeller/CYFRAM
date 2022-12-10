@@ -37,6 +37,8 @@ Larger F-RAM memories with 3-byte adressing are not supported until yet.
 
 ## More
 
+### Valid original links 
+
 - *Ferroelectric RAM:* https://en.wikipedia.org/wiki/Ferroelectric_RAM
 
 - *nonvolatile RAMs (NVRAM):* https://en.wikipedia.org/wiki/Non-volatile_memory
