@@ -59,7 +59,7 @@ Invalid original link - not directly supported by Infineon, but somehow forwarde
 -> *CE209976 – SPI Slave Select Inversion with Smart IO®:*
 https://www.infineon.com/dgdl/Infineon-CE209976_SPI_Slave_Select_Inversion_with_Smart_I_O-Code+Example-v01_00-EN.pdf?fileId=8ac78c8c7cdc391c017d0d7f6b705028
 
-#### Links valid on 2022-10-22
+#### links mentioned above are valid since 2022-10-22
 
 Outdated original links - Supported by Infineon since 2020
 
@@ -69,7 +69,7 @@ http://www.cypress.com/products/f-ram-nonvolatile-ferroelectric-ram
 - *CY15FRAMKIT-001:* 
 http://www.cypress.com/documentation/development-kitsboards/cy15framkit-001-serial-f-ram-development-kit-guide
 
-#### Links valid until 2020
+#### links mentioned above are valid since 2020
 
 
 #### Comments are welcome
