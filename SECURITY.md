@@ -7,8 +7,8 @@ currently being supported with security updates.
 
 | Version | Supported          |
 | ------- | ------------------ |
-| 0.1.6   | :white_check_mark: |
-| < 0.1.6 | :x:                |
+| 1.1.0   | :white_check_mark: |
+| < 1.1.0 | :x:                |
 
 ## Reporting a Vulnerability (TBD)
 
