@@ -1,103 +1,155 @@
-# CRA Exemption Statement – CYFRAM Library
+# CRA Voluntary Full Compliance – CYFRAM Library
 
 [![Language](https://img.shields.io/badge/language-🇬🇧%20English-informational)](./LANGUAGE.md)
 
-This document explains why the **CYFRAM Arduino Library** is considered **CRA-exempt** under the EU Cyber Resilience Act (Regulation (EU) 2024/2847).
+**Purpose / Disclaimer:**  
+This document outlines **voluntary full CRA compliance** measures for the CYFRAM Arduino Library.  
+The library is **not commercially distributed**; all actions are **voluntary**, aimed at **audit-readiness, security mindset, and compliance training**.
 
 ---
 
-## 1. Legal Basis
+## 1. Secure by Design
 
-According to **Article 3(22)** and the **recitals of the Cyber Resilience Act**, the project is **not considered “made available on the market”** within the meaning of the CRA.  
-
-> Therefore, this project is CRA-exempt:  
-> - No manufacturer obligations  
-> - No CE marking required  
-> - No formal conformity assessment required
+- Input validation for I²C/SPI addresses and buffers  
+- Error codes documented (NACK, overflow, null pointer)  
+- Threat modeling planned for I²C/SPI  
+- Guidelines for safe usage documented
 
 ---
 
-## 2. Project Status
+## 2. Security Updates & Patch Management
 
-CYFRAM is:
-
-- An **Arduino library** for I²C and SPI FRAM memory access  
-- Distributed under the **GPL-2.0 license**, fully open-source  
-- Maintained by an **individual contributor** with no commercial intent  
-- Free to use, modify, and redistribute under the license terms  
-
-There are **no sales, paid services, or monetized offerings** associated with this project.
+- SECURITY.md defines reporting process (voluntary)  
+- Version tracking for affected releases  
+- Optional: cryptographic verification / checksums for releases
 
 ---
 
-## 3. Future Considerations
+## 3. Documentation & Guidance
 
-If this project is **integrated into a commercial product** or monetized in the future, the **manufacturer or distributor** will assume the CRA obligations.  
-
-**Recommendation for downstream users:**  
-- Verify compliance obligations when using this library in a commercial product.
+- LANGUAGE.md & CODESTYLE.md for consistent code quality  
+- Integration notes for downstream use  
+- Known limitations documented
 
 ---
 
-## 4. References
+## 4. SBOM & Dependencies
+
+- All external dependencies tracked (Wire.h, SPI.h)  
+- SPDX identifiers, versions, and licenses recorded  
+- Monitoring of vulnerabilities recommended
+
+---
+
+## 5. Testing & Audit Readiness
+
+- Unit tests for edge cases  
+- Integration tests on I²C/SPI hardware  
+- Fuzzing / stress testing  
+- Documentation of test results
+
+---
+
+## 6. Versioning & Releases
+
+- Semantic Versioning: v1.0.0 → v1.2.0  
+- Tagged releases  
+- Optional: signed builds / hashes
+
+---
+
+## 7. Downstream Guidance
+
+- If integrated into a commercial product: manufacturer/distributor assumes CRA obligations  
+- Minimum safe usage recommendations  
+- Warnings for unsafe operations
+
+---
+
+## 8. References
 
 - [EU Cyber Resilience Act – Open Source Guidance](https://digital-strategy.ec.europa.eu/en/policies/cra-open-source)  
 - [Regulation (EU) 2024/2847](https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX%3A32024R2847)
 
 ---
 
-> This statement documents the exemption status for audit, transparency, and clarity for users and contributors.
-
+> This document demonstrates **voluntary full CRA compliance**, audit-readiness, and security awareness for learning and practice purposes.
 ---
 
-# CRA-Befreiungserklärung – CYFRAM Library
+# CRA Freiwillige Voll-Compliance – CYFRAM Library
 
 [![Language](https://img.shields.io/badge/language-🇩🇪%20Deutsch-informational)](./LANGUAGE.md)
 
-Dieses Dokument erklärt, warum die **CYFRAM Arduino Library** unter der EU-Cyber-Resilience-Verordnung (Verordnung (EU) 2024/2847) **CRA-exempt** (befreit) ist.
+**Zweck / Hinweis:**  
+Dieses Dokument beschreibt **freiwillige Voll-Compliance** der CYFRAM Arduino Library nach der EU-Cyber-Resilience-Verordnung (Verordnung (EU) 2024/2847).  
+Die Library wird **nicht kommerziell vertrieben**; alle Maßnahmen sind **freiwillig**, mit Fokus auf **Audit-Tauglichkeit, Security-Mindset und Trainingszwecke**.
 
 ---
 
-## 1. Rechtliche Grundlage
+## 1. Secure by Design
 
-Gemäß **Artikel 3(22)** und den **Erwägungsgründen der Cyber Resilience Act** gilt das Projekt **nicht als „auf dem Markt verfügbar“** im Sinne der CRA.  
-
-> Folglich ist dieses Projekt von CRA-Pflichten befreit:  
-> - Keine Herstellerpflichten  
-> - Keine CE-Kennzeichnung erforderlich  
-> - Keine formale Konformitätsbewertung erforderlich
+- Input-Validierung für I²C/SPI-Adressen und Puffer  
+- Fehlercodes dokumentiert (NACK, Overflow, Nullpointer)  
+- Threat Modeling für I²C/SPI geplant  
+- Richtlinien für sichere Nutzung dokumentiert
 
 ---
 
-## 2. Projektstatus
+## 2. Sicherheitsupdates & Patch-Management
 
-CYFRAM ist:
-
-- Eine **Arduino-Library** für I²C und SPI FRAM Speicherzugriff  
-- Unter **GPL-2.0 Lizenz** veröffentlicht, vollständig Open Source  
-- Wird von einer **Einzelperson ohne kommerzielle Absicht** gepflegt  
-- Frei nutzbar, veränderbar und weiterverteilbar unter den Lizenzbedingungen  
-
-Es gibt **keine Verkäufe, kostenpflichtigen Services oder monetarisierten Angebote**.
+- SECURITY.md definiert Meldungsprozess (freiwillig)  
+- Versionstracking für betroffene Releases  
+- Optional: kryptografische Signaturen / Prüfsummen für Releases
 
 ---
 
-## 3. Zukünftige Hinweise
+## 3. Dokumentation & Hinweise
 
-Wenn dieses Projekt **in ein kommerzielles Produkt integriert** oder monetarisiert wird, übernimmt der **Hersteller oder Vertreiber** die CRA-Pflichten.  
-
-**Empfehlung für Nutzer:**  
-- Prüfen Sie bei Nutzung der Library in einem kommerziellen Produkt die eigenen Compliance-Pflichten.
+- LANGUAGE.md & CODESTYLE.md für konsistente Codequalität  
+- Hinweise für Downstream-Nutzung  
+- Bekannte Limitationen dokumentiert
 
 ---
 
-## 4. Referenzen
+## 4. SBOM & Abhängigkeiten
+
+- Alle externen Abhängigkeiten erfasst (Wire.h, SPI.h)  
+- SPDX-IDs, Versionen und Lizenzen dokumentiert  
+- Monitoring bekannter Schwachstellen empfohlen
+
+---
+
+## 5. Tests & Audit-Tauglichkeit
+
+- Unit-Tests für Randfälle  
+- Integrationstests auf I²C/SPI Hardware  
+- Fuzzing / Stresstests  
+- Testergebnisse dokumentiert
+
+---
+
+## 6. Versionierung & Releases
+
+- Semantic Versioning: v1.0.0 → v1.2.0  
+- Tagged Releases  
+- Optional: signierte Builds / Prüfsummen
+
+---
+
+## 7. Hinweise für Downstream-Nutzer
+
+- Bei Integration in kommerzielle Produkte → Hersteller/Vertreiber übernimmt CRA-Pflichten  
+- Minimale Nutzungsempfehlungen / Hardware-Voraussetzungen  
+- Warnhinweise für unsichere Operationen
+
+---
+
+## 8. Referenzen
 
 - [EU Cyber Resilience Act – Open Source Guidance](https://digital-strategy.ec.europa.eu/en/policies/cra-open-source)  
 - [Verordnung (EU) 2024/2847](https://eur-lex.europa.eu/legal-content/DE/TXT/?uri=CELEX%3A32024R2847)
 
 ---
 
-> Diese Erklärung dokumentiert die Befreiung für Audit-Zwecke, Transparenz und Klarheit für Nutzer und Mitwirkende.
-
+> Dieses Dokument demonstriert **freiwillige Voll-CRA-Compliance**, Audit-Tauglichkeit und Security Awareness für Lern- und Trainingszwecke.
 
