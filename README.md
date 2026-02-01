@@ -6,6 +6,7 @@
 [![Version](https://img.shields.io/badge/version-1.1.0-brightgreen)](./CHANGELOG.md)
 [![Code Style](https://img.shields.io/badge/code%20style-consistent-informational)](./CODESTYLE.md)
 [![Security](https://img.shields.io/badge/Security-up--to--date-brightgreen)](./SECURITY.md)
+[![Arduino](https://img.shields.io/badge/Arduino-Code-blue?logo=arduino)](https://www.arduino.cc/)
 
 ### Cypress F-RAM Master Library for Arduino
 
