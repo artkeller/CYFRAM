@@ -1,12 +1,12 @@
 # CYFRAM
 
-[![CRA Status](https://img.shields.io/badge/CRA-Exempt%20(pure%20OSS)-informational)](./CRA-EXEMPTION.md)
-[![Language](https://img.shields.io/badge/language-🇬🇧%20English-informational)](./LANGUAGE.md)
-[![License](https://img.shields.io/badge/license-GPL--2.0-informational)](./LICENSE)
-[![Version](https://img.shields.io/badge/version-1.2.0-brightgreen)](./CHANGELOG.md)
-[![Code Style](https://img.shields.io/badge/code%20style-consistent-informational)](./CODESTYLE.md)
-[![Security](https://img.shields.io/badge/Security-up--to--date-brightgreen)](./SECURITY.md)
-[![Arduino](https://img.shields.io/badge/Arduino-Code-blue?logo=arduino)](https://www.arduino.cc/)
+[![CRA](https://img.shields.io/badge/CRA-Voluntary%20Full%20Compliance-informational?style=flat-square)](./CRA.md)
+[![Language](https://img.shields.io/badge/Language-🇬🇧/🇩🇪%20Comments-informational?style=flat-square)](./LANGUAGE.md)
+[![License](https://img.shields.io/badge/License-GPL--2.0-blue?style=flat-square)](./LICENSE.md)
+[![Version](https://img.shields.io/badge/Version-1.2.0-brightgreen?style=flat-square)](./CHANGELOG.md)
+[![Security](https://img.shields.io/badge/Security-Policy-brightgreen?style=flat-square)](./SECURITY.md)
+[![Code Style](https://img.shields.io/badge/Code%20Style-Arduino-orange?style=flat-square)](./CODESTYLE.md)
+[![Platform](https://img.shields.io/badge/Platform-I²C%20%26%20SPI-lightgrey?style=flat-square)](./README.md)
 
 
 ### Cypress F-RAM Master Library for Arduino
