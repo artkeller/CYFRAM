@@ -152,4 +152,56 @@ If this project is **integrated into a commercial product** or monetized in the 
 
 > This statement documents the exemption status for audit, transparency, and clarity for users and contributors.
 
+---
+
+# CRA-Befreiungserklärung – CYFRAM Library
+
+[![Language](https://img.shields.io/badge/language-🇩🇪%20Deutsch-informational)](./LANGUAGE.md)
+
+Dieses Dokument erklärt, warum die **CYFRAM Arduino Library** unter der EU-Cyber-Resilience-Verordnung (Verordnung (EU) 2024/2847) **CRA-exempt** (befreit) ist.
+
+---
+
+## 1. Rechtliche Grundlage
+
+Gemäß **Artikel 3(22)** und den **Erwägungsgründen der Cyber Resilience Act** gilt das Projekt **nicht als „auf dem Markt verfügbar“** im Sinne der CRA.  
+
+> Folglich ist dieses Projekt von CRA-Pflichten befreit:  
+> - Keine Herstellerpflichten  
+> - Keine CE-Kennzeichnung erforderlich  
+> - Keine formale Konformitätsbewertung erforderlich
+
+---
+
+## 2. Projektstatus
+
+CYFRAM ist:
+
+- Eine **Arduino-Library** für I²C FRAM Speicherzugriff  
+- Unter **GPL-2.0 Lizenz** veröffentlicht, vollständig Open Source  
+- Wird von einer **Einzelperson ohne kommerzielle Absicht** gepflegt  
+- Frei nutzbar, veränderbar und weiterverteilbar unter den Lizenzbedingungen  
+
+Es gibt **keine Verkäufe, kostenpflichtigen Services oder monetarisierten Angebote**.
+
+---
+
+## 3. Zukünftige Hinweise
+
+Wenn dieses Projekt **in ein kommerzielles Produkt integriert** oder monetarisiert wird, übernimmt der **Hersteller oder Vertreiber** die CRA-Pflichten.  
+
+**Empfehlung für Nutzer:**  
+- Prüfen Sie bei Nutzung der Library in einem kommerziellen Produkt die eigenen Compliance-Pflichten.
+
+---
+
+## 4. Referenzen
+
+- [EU Cyber Resilience Act – Open Source Guidance](https://digital-strategy.ec.europa.eu/en/policies/cra-open-source)  
+- [Verordnung (EU) 2024/2847](https://eur-lex.europa.eu/legal-content/DE/TXT/?uri=CELEX%3A32024R2847)
+
+---
+
+> Diese Erklärung dokumentiert die Befreiung für Audit-Zwecke, Transparenz und Klarheit für Nutzer und Mitwirkende.
+
 
