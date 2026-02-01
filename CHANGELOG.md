@@ -4,11 +4,12 @@
 
 This document describes the **versioning** of the project following Semantic Versioning (SemVer).
 
+```
 CHANGELOG.md
 ├── v1.2.0 – Current
 ├── v1.1.0
 ├── v1.0.0 – Initial
-
+```
 ---
 
 ## v1.2.0 – Current
@@ -27,10 +28,7 @@ CHANGELOG.md
 ## v1.1.0
 **Date:** 2025-xx-xx  
 **Changes:**
-- New documentation created
-- All code comments translated to English
-- README updated with the first badge bar
-- Minor code style improvements
+- README updated
 
 ---
 
@@ -38,7 +36,7 @@ CHANGELOG.md
 **Date:** 2025-xx-xx  
 **Changes:**
 - Initial project creation
-- First functional version of the code
+- Fully functional version of the code
 - Basic files and folder structure set up
 
 ---
