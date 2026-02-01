@@ -1,5 +1,7 @@
 # Code Style Policy – Arduino Library
 
+[![Language](https://img.shields.io/badge/language-🇬🇧%20English-informational)](./LANGUAGE.md)
+
 This document defines the **coding style** and conventions for this Arduino library repository.
 
 ---
