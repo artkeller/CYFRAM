@@ -26,7 +26,7 @@ CHANGELOG.md
 ---
 
 ## v1.1.0
-**Date:** 2025-xx-xx  
+**Date:** 2022-12-10  
 **Changes:**
 - README updated
 
