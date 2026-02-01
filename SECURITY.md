@@ -21,7 +21,7 @@ This project provides **security updates** only for the following versions:
 
 If you discover a security vulnerability, please report it **privately**:
 
-1. Send an email to **[YOUR_EMAIL]** or use a private GitHub issue marked as **security**.  
+1. **[Send a security report](mailto:artkeller@gmx.de)** or use a private GitHub issue marked as **security**.  
 2. Provide a clear description of the vulnerability, including:
    - Affected version(s)
    - Steps to reproduce
