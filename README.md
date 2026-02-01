@@ -3,7 +3,7 @@
 [![CRA Status](https://img.shields.io/badge/CRA-Exempt%20(pure%20OSS)-informational)](./CRA-EXEMPTION.md)
 [![Language](https://img.shields.io/badge/language-🇬🇧%20English-informational)](./LANGUAGE.md)
 [![License](https://img.shields.io/badge/license-GPL--2.0-informational)](./LICENSE)
-[![Version](https://img.shields.io/badge/version-1.1.0-brightgreen)](./CHANGELOG.md)
+[![Version](https://img.shields.io/badge/version-1.2.0-brightgreen)](./CHANGELOG.md)
 [![Code Style](https://img.shields.io/badge/code%20style-consistent-informational)](./CODESTYLE.md)
 [![Security](https://img.shields.io/badge/Security-up--to--date-brightgreen)](./SECURITY.md)
 [![Arduino](https://img.shields.io/badge/Arduino-Code-blue?logo=arduino)](https://www.arduino.cc/)
