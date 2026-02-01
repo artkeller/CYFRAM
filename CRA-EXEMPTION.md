@@ -1,5 +1,9 @@
 # CRA Exemption Statement (EU Cyber Resilience Act)
 
+![EN](https://img.shields.io/badge/lang-🇬🇧%20EN-informational)
+[![Language](https://img.shields.io/badge/language-🇬🇧%20English-informational)](./LANGUAGE.md)
+
+
 **As of:** January 2026
 
 This repository contains purely open-source software (OSS) that is **not commercially distributed**.
