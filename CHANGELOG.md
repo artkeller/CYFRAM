@@ -33,7 +33,7 @@ CHANGELOG.md
 ---
 
 ## v1.0.0 – Initial
-**Date:** 2025-xx-xx  
+**Date:** 2017-08-27  
 **Changes:**
 - Initial project creation
 - Fully functional version of the code
