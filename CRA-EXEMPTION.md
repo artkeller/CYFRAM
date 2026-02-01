@@ -21,7 +21,7 @@ According to **Article 3(22)** and the **recitals of the Cyber Resilience Act**,
 
 CYFRAM is:
 
-- An **Arduino library** for I²C FRAM memory access  
+- An **Arduino library** for I²C and SPI FRAM memory access  
 - Distributed under the **GPL-2.0 license**, fully open-source  
 - Maintained by an **individual contributor** with no commercial intent  
 - Free to use, modify, and redistribute under the license terms  
@@ -73,7 +73,7 @@ Gemäß **Artikel 3(22)** und den **Erwägungsgründen der Cyber Resilience Act*
 
 CYFRAM ist:
 
-- Eine **Arduino-Library** für I²C FRAM Speicherzugriff  
+- Eine **Arduino-Library** für I²C und SPI FRAM Speicherzugriff  
 - Unter **GPL-2.0 Lizenz** veröffentlicht, vollständig Open Source  
 - Wird von einer **Einzelperson ohne kommerzielle Absicht** gepflegt  
 - Frei nutzbar, veränderbar und weiterverteilbar unter den Lizenzbedingungen  
