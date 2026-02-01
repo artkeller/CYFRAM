@@ -104,6 +104,8 @@ Weitere Infos: [EU CRA Text](https://eur-lex.europa.eu/eli/reg/2024/2847/oj)
 
 # CRA Exemption Statement – CYFRAM Library
 
+[![Language](https://img.shields.io/badge/language-🇬🇧%20English-informational)](./LANGUAGE.md)
+
 This document explains why the **CYFRAM Arduino Library** is considered **CRA-exempt** under the EU Cyber Resilience Act (Regulation (EU) 2024/2847).
 
 ---
