@@ -4,6 +4,11 @@
 
 This document describes the **versioning** of the project following Semantic Versioning (SemVer).
 
+CHANGELOG.md
+├── v1.2.0 – Current
+├── v1.1.0
+├── v1.0.0 – Initial
+
 ---
 
 ## v1.2.0 – Current
