@@ -1,8 +1,6 @@
 # CRA Exemption Statement (EU Cyber Resilience Act)
 
-![EN](https://img.shields.io/badge/lang-🇬🇧%20EN-informational)
 [![Language](https://img.shields.io/badge/language-🇬🇧%20English-informational)](./LANGUAGE.md)
-
 
 **As of:** January 2026
 
@@ -24,6 +22,8 @@ Further information: [EU CRA Text](https://eur-lex.europa.eu/eli/reg/2024/2847/o
 ---
 
 # CRA-Exemption-Erklärung (EU Cyber Resilience Act)
+
+[![Language](https://img.shields.io/badge/language-🇩🇪%20Deutsch-informational)](./LANGUAGE.md)
 
 **Stand:** Januar 2026
 
