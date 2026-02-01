@@ -1,5 +1,7 @@
 # Security Policy
 
+[![Language](https://img.shields.io/badge/language-🇬🇧%20English-informational)](./LANGUAGE.md)
+
 This document describes the **security policy** for this project, including supported versions, vulnerability reporting, and response procedures.
 
 ---
