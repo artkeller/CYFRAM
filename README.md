@@ -1,6 +1,11 @@
 # CYFRAM
 
 [![CRA Status](https://img.shields.io/badge/CRA-Exempt%20(pure%20OSS)-informational)](./CRA-EXEMPTION.md)
+[![Language](https://img.shields.io/badge/language-🇬🇧%20English-informational)](./LANGUAGE.md)
+[![License](https://img.shields.io/badge/license-MIT-informational)](./LICENSE)
+[![Version](https://img.shields.io/badge/version-1.1.0-brightgreen)](./CHANGELOG.md)
+[![Code Style](https://img.shields.io/badge/code%20style-consistent-informational)](./CODESTYLE.md)
+
 
 ### Cypress F-RAM Master Library for Arduino
 
