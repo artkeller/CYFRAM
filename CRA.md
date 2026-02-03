@@ -169,12 +169,10 @@ Dieses Dokument beschreibt **freiwillige Voll-Compliance** der CYFRAM Arduino Li
 
 ---
 
-# CRA 自主的な完全準拠 – CYFRAM ライブラリ
+### 日本語
 
-[![Language](https://img.shields.io/badge/language-🇯🇵%20日本語-informational)](./LANGUAGE.md)
-
-**目的/注記：**
-この文書は、EUサイバーレジリエンス規則（規則（EU）2024/2847）に基づく、CYFRAM Arduinoライブラリの**自主的な完全準拠**について記載しています。
+**目的 / 注記**  
+この文書は、EUサイバーレジリエンス規則（規則（EU）2024/2847）に基づく、CYFRAM Arduinoライブラリの**自主的な完全準拠**について記載しています。  
 このライブラリは**商業的に販売されていません**。すべての措置は **任意** であり、**監査対応性、セキュリティマインドセット、およびトレーニング目的** に重点を置いています。
 
 ---
@@ -249,13 +247,10 @@ Dieses Dokument beschreibt **freiwillige Voll-Compliance** der CYFRAM Arduino Li
 
 ---
 
+### 简体中文
 
-# CRA 自愿完全合规——CYFRAM 库
-
-[![Language](https://img.shields.io/badge/language-🇨🇳%20简体中文-informational)](./LANGUAGE.md)
-
-**目的/说明：**
-本文档描述了 CYFRAM Arduino 库根据欧盟网络弹性条例（条例 (EU) 2024/2847）的**自愿完全合规**情况。
+**目的 / 说明**  
+本文档描述了 CYFRAM Arduino 库根据欧盟网络弹性条例（条例 (EU) 2024/2847）的**自愿完全合规**情况。  
 该库**不进行商业销售**； 所有措施都是**自愿的**，侧重于**审计能力、安全思维和培训目的**。
 
 ---
