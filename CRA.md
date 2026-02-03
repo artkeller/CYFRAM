@@ -238,7 +238,7 @@ Dieses Dokument beschreibt **freiwillige Voll-Compliance** der CYFRAM Arduino Li
 ## 8. 参考資料
 
 - [EU サイバーレジリエンス法 – オープンソースガイダンス](https://digital-strategy.ec.europa.eu/en/policies/cra-open-source) 
-- [規則 (EU) 2024/2847](https://eur-lex.europa.eu/legal-content/DE/TXT/?uri=CELEX%3A32024R2847)
+- [規則 (EU) 2024/2847](https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX%3A32024R2847)
 
 ---
 
@@ -315,7 +315,7 @@ Dieses Dokument beschreibt **freiwillige Voll-Compliance** der CYFRAM Arduino Li
 ## 8. 参考资料
 
 - [欧盟网络弹性法案——开源指南](https://digital-strategy.ec.europa.eu/en/policies/cra-open-source)
-- [欧盟条例 (EU) 2024/2847](https://eur-lex.europa.eu/legal-content/DE/TXT/?uri=CELEX%3A32024R2847)
+- [欧盟条例 (EU) 2024/2847](https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX%3A32024R2847)
 
 ---
 
