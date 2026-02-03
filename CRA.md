@@ -11,7 +11,7 @@ The library is **not commercially distributed**. All listed measures are **volun
 
 The document is available in four languages:
 
-- 🇬🇧 **[English](#english)** – Hauptversion / main version  
+- 🇬🇧 **[English](#english)** main version  
 - 🇩🇪 **[Deutsch](#deutsch)**  
 - 🇯🇵 **[日本語](#日本語)**  
 - 🇨🇳 **[简体中文](#简体中文)**
