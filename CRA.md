@@ -181,7 +181,6 @@ Dieses Dokument beschreibt **freiwillige Voll-Compliance** der CYFRAM Arduino Li
 
 - I²C/SPI アドレスおよびバッファの入力検証
 - エラーコードの文書化 (NACK、オーバーフロー、ヌルポインタ)
- 
 - I²C/SPI の脅威モデリングを計画
 - 安全な使用に関するガイドラインを文書化
 
