@@ -1,7 +1,7 @@
 # CYFRAM
 
 [![CRA](https://img.shields.io/badge/CRA-Voluntary%20Full%20Compliance-informational?style=flat-square)](./CRA.md)
-[![Language](https://img.shields.io/badge/Language-🇬🇧/🇩🇪%20Comments-informational?style=flat-square)](./LANGUAGE.md)
+[![Language](https://img.shields.io/badge/language-🇬🇧%20English-informational)](./LANGUAGE.md)
 [![License](https://img.shields.io/badge/License-GPL--2.0-blue?style=flat-square)](./LICENSE.md)
 [![Version](https://img.shields.io/badge/Version-1.2.0-brightgreen?style=flat-square)](./CHANGELOG.md)
 [![Security](https://img.shields.io/badge/Security-Policy-brightgreen?style=flat-square)](./SECURITY.md)
