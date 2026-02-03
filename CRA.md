@@ -1,3 +1,23 @@
+# CRA Voluntary Full Compliance – CYFRAM Arduino Library
+
+[![Language Selector](https://img.shields.io/badge/Select%20Language-%F0%9F%8C%90-informational?style=flat-square&logo=earth-africa)](./LANGUAGE.md)
+
+**Short Summary / Disclaimer**  
+This document demonstrates **voluntary full compliance** with the **EU Cyber Resilience Act (Regulation (EU) 2024/2847)** for the CYFRAM Arduino Library.  
+The library is **not commercially distributed**. All listed measures are **voluntary**, taken for  
+- audit-readiness  
+- security awareness  
+- training & learning purposes  
+
+The document is available in four languages:
+
+- 🇬🇧 **[English](#english)** – Hauptversion / main version  
+- 🇩🇪 **[Deutsch](#deutsch)**  
+- 🇯🇵 **[日本語](#日本語)**  
+- 🇨🇳 **[简体中文](#简体中文)**
+
+---
+
 # CRA Voluntary Full Compliance – CYFRAM Library
 
 [![Language](https://img.shields.io/badge/language-🇬🇧%20English-informational)](./LANGUAGE.md)
