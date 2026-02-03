@@ -20,9 +20,8 @@ The document is available in four languages:
 
 ### English {#english}
 
-**Purpose / Disclaimer:**  
-This document outlines **voluntary full CRA compliance** measures for the CYFRAM Arduino Library.  
-The library is **not commercially distributed**; all actions are **voluntary**, aimed at **audit-readiness, security mindset, and compliance training**.
+**Purpose / Disclaimer**  
+This document outlines **voluntary full CRA compliance** measures for the CYFRAM Arduino Library. The library is **not commercially distributed**; all actions are **voluntary**, aimed at **audit-readiness, security mindset, and compliance training**.
 
 ---
 
@@ -94,13 +93,10 @@ The library is **not commercially distributed**; all actions are **voluntary**, 
 > This document demonstrates **voluntary full CRA compliance**, audit-readiness, and security awareness for learning and practice purposes.
 ---
 
-# CRA Freiwillige Voll-Compliance – CYFRAM Library
+### Deutsch {#deutsch}
 
-[![Language](https://img.shields.io/badge/language-🇩🇪%20Deutsch-informational)](./LANGUAGE.md)
-
-**Zweck / Hinweis:**  
-Dieses Dokument beschreibt **freiwillige Voll-Compliance** der CYFRAM Arduino Library nach der EU-Cyber-Resilience-Verordnung (Verordnung (EU) 2024/2847).  
-Die Library wird **nicht kommerziell vertrieben**; alle Maßnahmen sind **freiwillig**, mit Fokus auf **Audit-Tauglichkeit, Security-Mindset und Trainingszwecke**.
+**Zweck / Hinweis**  
+Dieses Dokument beschreibt **freiwillige Voll-Compliance** der CYFRAM Arduino Library nach der EU-Cyber-Resilience-Verordnung (Verordnung (EU) 2024/2847). Die Library wird **nicht kommerziell vertrieben**; alle Maßnahmen sind **freiwillig**, mit Fokus auf **Audit-Tauglichkeit, Security-Mindset und Trainingszwecke**.
 
 ---
 
