@@ -18,9 +18,7 @@ The document is available in four languages:
 
 ---
 
-# CRA Voluntary Full Compliance – CYFRAM Library
-
-[![Language](https://img.shields.io/badge/language-🇬🇧%20English-informational)](./LANGUAGE.md)
+### English {#english}
 
 **Purpose / Disclaimer:**  
 This document outlines **voluntary full CRA compliance** measures for the CYFRAM Arduino Library.  
