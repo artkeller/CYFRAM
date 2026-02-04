@@ -32,4 +32,4 @@ Scope: Source code repository
 - Hardware interfaces (I2C, SPI) are abstracted.
 - SBOM is maintained manually as PoC.
 
-For machine-readable format see: `sbom.spdx.json`
+For machine-readable format see: [sbom.spdx.json](./sbom.spdx.json)
