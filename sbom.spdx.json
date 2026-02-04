@@ -8,7 +8,7 @@
     "creators": [
       "Person: Project Maintainer"
     ],
-    "created": "2026-01-01T00:00:00Z"
+    "created": "2026-02-01T00:00:00Z"
   },
   "packages": [
     {
@@ -17,7 +17,7 @@
       "versionInfo": "1.2.0",
       "downloadLocation": "NOASSERTION",
       "filesAnalyzed": false,
-      "licenseDeclared": "MIT",
+      "licenseDeclared": "GPL-2.0",
       "supplier": "Person: Project Maintainer"
     }
   ]
