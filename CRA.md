@@ -16,6 +16,10 @@ The document is available in four languages:
 - 🇯🇵 **[日本語](#日本語)**  
 - 🇨🇳 **[简体中文](#简体中文)**
 
+For audit traceability see:
+→ Audit-Traceability-Matrix.md
+
+
 ---
 
 ### English
