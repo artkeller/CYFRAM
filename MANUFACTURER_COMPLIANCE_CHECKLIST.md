@@ -1,5 +1,7 @@
 # Manufacturer Compliance Checklist (CRA – Voluntary)
 
+[![Language](https://img.shields.io/badge/language-🇬🇧%20English-informational)](./LANGUAGE.md)
+
 This checklist documents voluntary alignment with the manufacturer obligations
 defined in the EU Cyber Resilience Act (Regulation (EU) 2024/2847).
 
