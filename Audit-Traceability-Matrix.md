@@ -1,5 +1,7 @@
 # CRA Audit Traceability Matrix
 
+[![Language](https://img.shields.io/badge/language-🇬🇧%20English-informational)](./LANGUAGE.md)
+
 This matrix maps CRA requirements to concrete repository artifacts.
 
 ---
