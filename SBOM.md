@@ -1,5 +1,7 @@
 # Software Bill of Materials (SBOM)
 
+[![Language](https://img.shields.io/badge/language-🇬🇧%20English-informational)](./LANGUAGE.md)
+
 This document provides a Software Bill of Materials for this project
 in accordance with CRA Article 13 and common industry practices.
 
