@@ -164,7 +164,7 @@ Dieses Dokument beschreibt **freiwillige Voll-Compliance** der CYFRAM Arduino Li
 
 ## 8. Referenzen
 
-- [EU Cyber Resilience Act – Open Source Guidance](https://digital-strategy.ec.europa.eu/en/policies/cra-open-source)  
+- [EU Cyber Resilience Act – Open Source Guidance](https://digital-strategy.ec.europa.eu/de/policies/cra-open-source)  
 - [Verordnung (EU) 2024/2847](https://eur-lex.europa.eu/legal-content/DE/TXT/?uri=CELEX%3A32024R2847)
 
 ---
