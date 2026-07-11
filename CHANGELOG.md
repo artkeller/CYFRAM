@@ -14,7 +14,7 @@ CHANGELOG.md
 ---
 
 ## v1.3.0 – Current
-**Date:** 2026-07-11
+**Date:** 2026-07-11  
 **Changes:**
 - Added `pro/` track: object-oriented, bus-transaction-safe SPI/I2C driver (`CY_SPI_FRAM`, `CY_I2C_FRAM`), versioned independently as **CYFRAM_Pro v2.0.0** (own `pro/library.properties`)
 - Legacy `src/` (CYSPIFRAM, CYI2CFRAM) left **unchanged and frozen** — existing Library Manager installs and forks remain unaffected
