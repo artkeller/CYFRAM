@@ -1,0 +1,45 @@
+#######################################
+# Syntax Coloring Map For CYFRAM_Pro
+#######################################
+
+#######################################
+# Datatypes (KEYWORD1)
+#######################################
+
+CY_SPI_FRAM	KEYWORD1
+CY_I2C_FRAM	KEYWORD1
+
+#######################################
+# Methods and Functions (KEYWORD2)
+#######################################
+
+begin	KEYWORD2
+writeByte	KEYWORD2
+readByte	KEYWORD2
+writeBurst	KEYWORD2
+readBurst	KEYWORD2
+writeStatusRegister	KEYWORD2
+readStatusRegister	KEYWORD2
+readDeviceID	KEYWORD2
+writeDisable	KEYWORD2
+pingDevice	KEYWORD2
+capacity	KEYWORD2
+isInitialized	KEYWORD2
+
+#######################################
+# Constants (LITERAL1)
+#######################################
+
+OK	LITERAL1
+ERR_NOT_INITIALIZED	LITERAL1
+ERR_NULL_POINTER	LITERAL1
+ERR_ZERO_LENGTH	LITERAL1
+ERR_ADDRESS_OUT_OF_RANGE	LITERAL1
+ERR_VERIFY_FAILED	LITERAL1
+ERR_UNSUPPORTED	LITERAL1
+ERR_I2C_DATA_TOO_LONG	LITERAL1
+ERR_I2C_NACK_ADDRESS	LITERAL1
+ERR_I2C_NACK_DATA	LITERAL1
+ERR_I2C_BUS_ERROR	LITERAL1
+ERR_I2C_TIMEOUT	LITERAL1
+ERR_I2C_READ_SHORT	LITERAL1
