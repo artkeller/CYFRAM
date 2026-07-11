@@ -5,12 +5,15 @@
 ## 1. Purpose
 
 Document update and patch process for CRA-related obligations in OSS.
+Applies to both the Legacy track (`src/`, frozen — see note below) and
+the Pro track (`pro/src/`, actively maintained).
 
 ---
 
 ## 2. Versioning
 
-- Follows semantic versioning: v1.0.0, v1.1.0, v1.2.0…
+- Repository/Legacy follows semantic versioning: v1.0.0, v1.1.0, v1.2.0, v1.3.0…
+- CYFRAM_Pro (`pro/`) is versioned independently, starting at v2.0.0, tracked in `pro/library.properties`
 - Each release updates: CHANGELOG.md + SBOM.md
 
 ---
@@ -19,7 +22,12 @@ Document update and patch process for CRA-related obligations in OSS.
 
 - Security vulnerability found in library or dependency
 - Bug fix affecting memory integrity
-- Dependency updates (Arduino / Wire library)
+- Dependency updates (Arduino / Wire / SPI library)
+
+**Legacy note:** the Legacy track is intentionally frozen (see
+`README.md`, `MIGRATION.md`) to avoid breaking existing Library Manager
+installs and forks. Legacy updates are limited to security-critical
+fixes; feature and robustness improvements land in Pro only.
 
 ---
 

@@ -1,86 +1,124 @@
 # CYFRAM
 
-[![CRA](https://img.shields.io/badge/CRA-Voluntary%20Full%20Compliance-informational?style=flat-square)](./CRA.md)
+Cypress/Infineon F-RAM Master Library for Arduino — SPI and I2C.
+
 [![Language](https://img.shields.io/badge/language-🇬🇧%20English-informational)](./LANGUAGE.md)
-[![License](https://img.shields.io/badge/License-GPL--2.0-blue?style=flat-square)](./LICENSE)
-[![Version](https://img.shields.io/badge/Version-1.2.0-brightgreen?style=flat-square)](./CHANGELOG.md)
-[![Security](https://img.shields.io/badge/Security-Policy-brightgreen?style=flat-square)](./SECURITY.md)
-[![Code Style](https://img.shields.io/badge/Code%20Style-Arduino-orange?style=flat-square)](./CODESTYLE.md)
-[![Platform](https://img.shields.io/badge/Platform-I²C%20%26%20SPI-lightgrey?style=flat-square)](./README.md)
+[![CRA](https://img.shields.io/badge/CRA-voluntary%20compliance-blue)](./CRA.md)
+[![Security](https://img.shields.io/badge/security-policy-orange)](./SECURITY.md)
 
+This repository contains **two parallel, independently usable
+libraries**:
 
-### Cypress F-RAM Master Library for Arduino
+| | Path | Status | For whom |
+|---|---|---|---|
+| **Legacy** | `src/`, `examples/` (repository root) | frozen, unchanged | existing Arduino Library Manager installs, existing forks, existing code using `#include <CYSPIFRAM.h>` |
+| **Pro** | `pro/` | actively developed | new projects; anything that needs bus safety, error handling, multiple chips on one bus, or ESP32 support |
 
-**F-RAMs** (*Ferroelectric RAMs*) are *nonvolatile RAMs* with very high endurance (exceeding from 10^12 to 10^14 up to 10^16 read/write cycles **per byte**. F-RAMs store in byte-mode unlike block-mode of flash memories).
+The Legacy library is **not removed or rewritten** — it stays exactly
+as installed via the Library Manager, so no existing install or fork
+breaks. The Pro library is an **additional** offering in its own
+subfolder with its own `library.properties`.
 
-This library supports **I2C and SPI APIs** provided with the development kit *CY15FRAMKIT-001*. They where assembled as a lean all-in-one Arduino library to support generic Cypress F-RAM memories.
+## What's new in Pro?
 
-- The **I2C APIs** include initialization of block, write, current read and random read
+Summary (full detail: [`CHANGELOG.md`](./CHANGELOG.md)):
 
-- The **SPI APIs** include initialization of block, write/read memory, status register
+- Object-oriented: multiple F-RAM chips on one bus instead of global state
+- `SPI.beginTransaction()`/`endTransaction()` resp. mapped `Wire` error
+  codes — bus- and interrupt-safe
+- Automatic address width (SPI: 2/3 bytes, I2C: 1/2 bytes) based on
+  declared chip capacity
+- Bounds checking, NULL checks, optional read-back verify
+- I2C: automatic chunking of burst transfers against the Wire buffer,
+  clear error codes (address NACK vs. data NACK vs. bus error),
+  `pingDevice()` self-test
+- SPI: `readDeviceID()` self-test, configurable bus clock
+- Examples for **AVR** (Uno/Nano/Mega, fixed SPI bus) and **ESP32**
+  (freely mappable SPI/I2C pins, larger I2C chunk)
 
-Arduino standard libraries *Wire* and *SPI*  will be used for best MCU HW support.
+## Installation
 
-Chip specific functions like vendor-IDs, sleep-mode, etc. or pin-handling for /WP and /HOLD are not supported in this version. 
+**Legacy** (`CYFRAM`): as usual via the Arduino Library Manager, or as
+a ZIP from the repository root.
 
+**Pro** (`CYFRAM_Pro`): currently manual installation only, since the
+Library Manager indexes only one root-level `library.properties` per
+repository. Instructions: [`pro/README.md`](./pro/README.md).
 
-## Examples 
+## Security Considerations
 
-Two sketches within the *CY15FRAMKIT-001 Kit Setup* had been modified and analysed with a logic analyzer. 
+Both tracks are maintained as a voluntary demonstration of security
+practice, not under a commercial support contract. Key points:
 
-- **FRAM_I2C_Example_2.ino:** This sketch was used to test **FM24W256, 256-Kbit (32K x 8) Serial (I2C) F-RAM**
+- Input validation (bounds/NULL checks) is enforced in Pro on every
+  public read/write method; Legacy has partial coverage only (see
+  [`THREAT_MODEL.md`](./THREAT_MODEL.md) for the detailed gap analysis).
+- Neither track has been fuzz-tested; both have been verified against
+  real hardware via logic-analyzer capture, see
+  `examples/FRAM_SPI_Example_2/logic/` and
+  `examples/FRAM_I2C_Example_2/logic/` for the Legacy captures.
+- This is a demo/hobby-scale library, not qualified for safety-related
+  or life-critical use. See [`CRA_DISCLAIMER` section in `CRA.md`](./CRA.md)
+  for the current legal scope assessment.
+- Vulnerability reporting: [`SECURITY.md`](./SECURITY.md).
 
-- **FRAM_SPI_Example_2.ino:** This sketch was used to test **FM25W256, 256-Kbit (32K x 8) Serial (SPI) F-RAM**
+## Repository Structure
 
-All test results are part of this distribution and reside in the folders **logic** and **output**. 
+```
+CYFRAM/
+├── README.md                  <- this file
+├── LICENSE                    <- GPLv2 / LGPLv2.1 (dual), unchanged
+├── CHANGELOG.md                <- version history, both tracks
+├── MIGRATION.md                 <- Legacy -> Pro migration guide
+├── CODESTYLE.md                  <- coding conventions (applies to both tracks)
+├── LANGUAGE.md                     <- documentation/code language policy
+├── SECURITY.md                      <- vulnerability reporting
+├── SECURITY_UPDATE_POLICY.md         <- release/patch process
+├── VULNERABILITY_HANDLING.md          <- handling process detail
+├── THREAT_MODEL.md                     <- assets, threats, mitigations
+├── SBOM.md / sbom.spdx.json             <- software bill of materials
+├── CRA.md                                <- CRA voluntary compliance (EN/DE/JA/ZH)
+├── MANUFACTURER_COMPLIANCE_CHECKLIST.md   <- checklist
+├── MANUFACTURER_SELF_DECLARATION.md        <- self-declaration
+├── Audit-Traceability-Matrix.md             <- CRA article -> evidence mapping
+├── library.properties                        <- Legacy, unchanged
+├── src/                                        <- Legacy source (frozen)
+│   ├── CYSPIFRAM.cpp / .h
+│   └── CYI2CFRAM.cpp / .h
+├── examples/                                    <- Legacy examples (frozen)
+│   ├── FRAM_SPI_Example_2/  (incl. logic-analyzer captures)
+│   └── FRAM_I2C_Example_2/  (incl. logic-analyzer captures)
+└── pro/                                           <- Pro track (active development)
+    ├── README.md
+    ├── library.properties
+    ├── keywords.txt
+    ├── src/
+    │   ├── CY_SPI_FRAM.h / .cpp
+    │   └── CY_I2C_FRAM.h / .cpp
+    └── examples/
+        ├── FRAM_SPI_Pro_AVR_Uno/
+        ├── FRAM_SPI_Pro_ESP32/
+        ├── FRAM_I2C_Pro_AVR_Uno/
+        └── FRAM_I2C_Pro_ESP32/
+```
 
-Although other Cypress F-RAMs are not tested yet memories with 2-byte addressing should work. Grateful if you can send results of tested F-RAM memories (of different vendors if feasable).
+## Why this split?
 
-Larger F-RAM memories with 3-byte adressing are not supported until yet.
+A fork with production code on the old driver already exists. A
+breaking change in the root path (renaming `src/CYSPIFRAM.h` or
+changing its behavior) would silently break that fork and every other
+existing install. The Pro library therefore lives as a standalone,
+additive library in `pro/` — anyone who doesn't need it won't notice
+it; anyone who wants it installs it deliberately.
 
-## UPDATE: Infineon aquired Cypress
+## License
 
-2019: Infineon has announced the acquisition of Cypress Semiconductors in order to push further into the automotive, industrial, and Internet of Things (IoT) hardware markets.
+GPL-2.0-or-later OR LGPL-2.1-or-later (dual, your choice), as in the
+original Cypress reference code. Applies to Legacy and Pro alike.
 
-2020: Infineon Technologies AG announced the Closing of the acquisition of Cypress Semiconductor Corporation. The San José-based company has become part of Infineon effective as of the Closing.
+## Cyber Resilience Act (EU) 2024/2847
 
-## More
-
-### Valid original links 
-
-- *Ferroelectric RAM:* https://en.wikipedia.org/wiki/Ferroelectric_RAM
-
-- *nonvolatile RAMs (NVRAM):* https://en.wikipedia.org/wiki/Non-volatile_memory
-
-- *Infineon and Cypress: Strengthening the link between the real and the digital world, September 2019*
-https://www.infineon.com/dgdl/2019-09-16+Acquisition+of+Cypress.pdf?fileId=5546d4616b056b50016b1ba6930f0000
-
-- *Infineon Technologies AG completes acquisition of Cypress Semiconductor Corporation):*
-https://www.infineon.com/cms/en/about-infineon/press/press-releases/2020/INFXX202004-049.html
-
-- *F-RAM (Nonvolatile Ferroelectric RAM):* https://www.infineon.com/cms/en/product/memories/f-ram-ferroelectric-ram/ 
-
-- *CY15FRAMKIT-001:* 
-https://www.infineon.com/cms/en/product/evaluation-boards/cy15framkit-001/
-
-### Invalid original link - not directly supported by Infineon, but somehow forwarded
-
-- *CY15FRAMKIT-001 Kit Setup (CY15FRAMKIT-001 Kit Setup - Kit Design Files,Documentation, Examples):*
-(http://www.cypress.com/file/278596/download  - you must log in or register to access this page) 
--> *CE209976 – SPI Slave Select Inversion with Smart IO®:*
-https://www.infineon.com/dgdl/Infineon-CE209976_SPI_Slave_Select_Inversion_with_Smart_I_O-Code+Example-v01_00-EN.pdf?fileId=8ac78c8c7cdc391c017d0d7f6b705028
-
-#### Links mentioned above are valid since 2022-10-22
-
-### Outdated original links - Supported by Infineon since 2020
-
-- *F-RAM (Nonvolatile Ferroelectric RAM):*  
-http://www.cypress.com/products/f-ram-nonvolatile-ferroelectric-ram
-
-- *CY15FRAMKIT-001:* 
-http://www.cypress.com/documentation/development-kitsboards/cy15framkit-001-serial-f-ram-development-kit-guide
-
-#### Links mentioned above are valid since 2020
-
-
-#### Comments are welcome
+See [`CRA.md`](./CRA.md) and [`MANUFACTURER_SELF_DECLARATION.md`](./MANUFACTURER_SELF_DECLARATION.md)
+for this project's voluntary compliance posture, and
+[`Audit-Traceability-Matrix.md`](./Audit-Traceability-Matrix.md) for
+the article-by-article evidence mapping (Legacy vs. Pro).

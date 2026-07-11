@@ -3,7 +3,7 @@
 [![Language Selector](https://img.shields.io/badge/Select%20Language-%F0%9F%8C%90-informational?style=flat-square&logo=earth-africa)](./LANGUAGE.md)
 
 **Short Summary / Disclaimer**  
-This document demonstrates **voluntary full compliance** with the **EU Cyber Resilience Act (Regulation (EU) 2024/2847)** for the CYFRAM Arduino Library.  
+This document demonstrates **voluntary full compliance** with the **EU Cyber Resilience Act (Regulation (EU) 2024/2847)** for the CYFRAM Arduino Library — covering both the frozen Legacy driver (`src/`) and the additive, actively maintained Pro driver (`pro/`, CYFRAM_Pro).
 The library is **not commercially distributed**. All listed measures are **voluntary**, taken for  
 - audit-readiness  
 - security awareness  
@@ -16,6 +16,8 @@ The document is available in four languages:
 - 🇯🇵 **[日本語](#日本語)**  
 - 🇨🇳 **[简体中文](#简体中文)**
 
+All four language sections are current as of v1.3.0 (Legacy + Pro track).
+
 For audit traceability see:
 → Audit-Traceability-Matrix.md
 
@@ -25,7 +27,7 @@ For audit traceability see:
 ### English
 
 **Purpose / Disclaimer**  
-This document outlines **voluntary full CRA compliance** measures for the CYFRAM Arduino Library. The library is **not commercially distributed**; all actions are **voluntary**, aimed at **audit-readiness, security mindset, and compliance training**.
+This document outlines **voluntary full CRA compliance** measures for the CYFRAM Arduino Library, covering both the Legacy track (`src/`) and the Pro track (`pro/`). The library is **not commercially distributed**; all actions are **voluntary**, aimed at **audit-readiness, security mindset, and compliance training**.
 
 ---
 
@@ -35,6 +37,7 @@ This document outlines **voluntary full CRA compliance** measures for the CYFRAM
 - Error codes documented (NACK, overflow, null pointer)  
 - Threat modeling planned for I²C/SPI  
 - Guidelines for safe usage documented
+- Pro track additionally implements: bounds-checked read/write against declared device capacity, SPI transaction locking, mapped I2C error codes, and a typed `Status` return value on every public method (see [pro/src](./pro/src))
 
 ---
 
@@ -51,6 +54,7 @@ This document outlines **voluntary full CRA compliance** measures for the CYFRAM
 - LANGUAGE.md & CODESTYLE.md for consistent code quality  
 - Integration notes for downstream use  
 - Known limitations documented
+- Pro track: additional quickstart in [pro/README.md](./pro/README.md), migration guide in [MIGRATION.md](./MIGRATION.md)
 
 ---
 
@@ -73,7 +77,7 @@ This document outlines **voluntary full CRA compliance** measures for the CYFRAM
 
 ## 6. Versioning & Releases
 
-- Semantic Versioning: v1.0.0 → v1.2.0  
+- Semantic Versioning: v1.0.0 → v1.3.0 (repository/Legacy); CYFRAM_Pro versioned independently from v2.0.0
 - Tagged releases  
 - Optional: signed builds / hashes
 
@@ -100,7 +104,7 @@ This document outlines **voluntary full CRA compliance** measures for the CYFRAM
 ### Deutsch
 
 **Zweck / Hinweis**  
-Dieses Dokument beschreibt **freiwillige Voll-Compliance** der CYFRAM Arduino Library nach der EU-Cyber-Resilience-Verordnung (Verordnung (EU) 2024/2847). Die Library wird **nicht kommerziell vertrieben**; alle Maßnahmen sind **freiwillig**, mit Fokus auf **Audit-Tauglichkeit, Security-Mindset und Trainingszwecke**.
+Dieses Dokument beschreibt **freiwillige Voll-Compliance** der CYFRAM Arduino Library nach der EU-Cyber-Resilience-Verordnung (Verordnung (EU) 2024/2847), sowohl für den eingefrorenen Legacy-Zweig (`src/`) als auch für den aktiv gepflegten Pro-Zweig (`pro/`). Die Library wird **nicht kommerziell vertrieben**; alle Maßnahmen sind **freiwillig**, mit Fokus auf **Audit-Tauglichkeit, Security-Mindset und Trainingszwecke**.
 
 ---
 
@@ -110,6 +114,7 @@ Dieses Dokument beschreibt **freiwillige Voll-Compliance** der CYFRAM Arduino Li
 - Fehlercodes dokumentiert (NACK, Overflow, Nullpointer)  
 - Threat Modeling für I²C/SPI geplant  
 - Richtlinien für sichere Nutzung dokumentiert
+- Pro-Zweig zusätzlich: Bounds-Checking gegen deklarierte Kapazität, SPI-Transaction-Locking, gemappte I2C-Fehlercodes, typisierter `Status`-Rückgabewert bei jeder öffentlichen Methode (siehe [pro/src](./pro/src))
 
 ---
 
@@ -126,6 +131,7 @@ Dieses Dokument beschreibt **freiwillige Voll-Compliance** der CYFRAM Arduino Li
 - LANGUAGE.md & CODESTYLE.md für konsistente Codequalität  
 - Hinweise für Downstream-Nutzung  
 - Bekannte Limitationen dokumentiert
+- Pro-Zweig: zusätzlicher Quickstart in [pro/README.md](./pro/README.md), Migrationsleitfaden in [MIGRATION.md](./MIGRATION.md)
 
 ---
 
@@ -148,7 +154,7 @@ Dieses Dokument beschreibt **freiwillige Voll-Compliance** der CYFRAM Arduino Li
 
 ## 6. Versionierung & Releases
 
-- Semantic Versioning: v1.0.0 → v1.2.0  
+- Semantic Versioning: v1.0.0 → v1.3.0 (Repository/Legacy); CYFRAM_Pro versioniert sich unabhängig ab v2.0.0
 - Tagged Releases  
 - Optional: signierte Builds / Prüfsummen
 
@@ -176,7 +182,7 @@ Dieses Dokument beschreibt **freiwillige Voll-Compliance** der CYFRAM Arduino Li
 ### 日本語
 
 **目的 / 注記**  
-この文書は、EUサイバーレジリエンス規則（規則（EU）2024/2847）に基づく、CYFRAM Arduinoライブラリの**自主的な完全準拠**について記載しています。  
+この文書は、EUサイバーレジリエンス規則（規則（EU）2024/2847）に基づく、CYFRAM Arduinoライブラリの**自主的な完全準拠**について記載しています。凍結されたLegacyトラック（`src/`）と、積極的に保守されているProトラック（`pro/`）の両方を対象とします。  
 このライブラリは**商業的に販売されていません**。すべての措置は **任意** であり、**監査対応性、セキュリティマインドセット、およびトレーニング目的** に重点を置いています。
 
 ---
@@ -187,6 +193,7 @@ Dieses Dokument beschreibt **freiwillige Voll-Compliance** der CYFRAM Arduino Li
 - エラーコードの文書化 (NACK、オーバーフロー、ヌルポインタ)
 - I²C/SPI の脅威モデリングを計画
 - 安全な使用に関するガイドラインを文書化
+- Proトラックでは追加で、宣言されたデバイス容量に対する境界チェック、SPIトランザクションロック、マップされたI2Cエラーコード、およびすべての公開メソッドにおける型付き `Status` 戻り値を実装（[pro/src](./pro/src) 参照）
 
 ---
 
@@ -203,6 +210,7 @@ Dieses Dokument beschreibt **freiwillige Voll-Compliance** der CYFRAM Arduino Li
 - LANGUAGE.md および CODESTYLE.md による一貫したコード品質
 - ダウンストリーム利用に関する注意事項
 - 既知の制限事項の文書化
+- Proトラック: [pro/README.md](./pro/README.md) に追加のクイックスタート、[MIGRATION.md](./MIGRATION.md) に移行ガイドを用意
 
 ---
 
@@ -225,7 +233,7 @@ Dieses Dokument beschreibt **freiwillige Voll-Compliance** der CYFRAM Arduino Li
 
 ## 6. バージョン管理とリリース
 
-- セマンティックバージョニング：v1.0.0 → v1.2.0
+- セマンティックバージョニング：v1.0.0 → v1.3.0（リポジトリ/Legacy）；CYFRAM Proはv2.0.0から独立してバージョン管理
 - タグ付きリリース
 - オプション：署名付きビルド/チェックサム
 
@@ -253,7 +261,7 @@ Dieses Dokument beschreibt **freiwillige Voll-Compliance** der CYFRAM Arduino Li
 ### 简体中文
 
 **目的 / 说明**  
-本文档描述了 CYFRAM Arduino 库根据欧盟网络弹性条例（条例 (EU) 2024/2847）的**自愿完全合规**情况。  
+本文档描述了 CYFRAM Arduino 库根据欧盟网络弹性条例（条例 (EU) 2024/2847）的**自愿完全合规**情况，涵盖已冻结的 Legacy 分支（`src/`）和持续维护的 Pro 分支（`pro/`）。  
 该库**不进行商业销售**； 所有措施都是**自愿的**，侧重于**审计能力、安全思维和培训目的**。
 
 ---
@@ -264,6 +272,7 @@ Dieses Dokument beschreibt **freiwillige Voll-Compliance** der CYFRAM Arduino Li
 - 记录错误代码（NACK、溢出、空指针）
 - 计划对 I²C/SPI 进行威胁建模
 - 记录安全使用准则
+- Pro 分支另外实现：针对声明的设备容量进行边界检查、SPI 事务锁定、映射的 I2C 错误代码，以及每个公共方法均返回类型化的 `Status` 值（参见 [pro/src](./pro/src)）
 
 ---
 
@@ -280,6 +289,7 @@ Dieses Dokument beschreibt **freiwillige Voll-Compliance** der CYFRAM Arduino Li
 - LANGUAGE.md 与 CODESTYLE.md 确保代码质量的一致性
 - 下游使用说明
 - 已知限制记录
+- Pro 分支：[pro/README.md](./pro/README.md) 提供额外的快速入门，[MIGRATION.md](./MIGRATION.md) 提供迁移指南
 
 ---
 
@@ -302,7 +312,7 @@ Dieses Dokument beschreibt **freiwillige Voll-Compliance** der CYFRAM Arduino Li
 
 ## 6. 版本控制和发布
 
-- 语义版本控制：v1.0.0 → v1.2.0
+- 语义版本控制：v1.0.0 → v1.3.0（仓库/Legacy）；CYFRAM Pro 从 v2.0.0 开始独立进行版本控制
 - 标记版本
 - 可选：签名构建/校验和
 

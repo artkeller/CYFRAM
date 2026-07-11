@@ -11,8 +11,22 @@
       "SPDXID": "SPDXRef-CYFRAM",
       "name": "CYFRAM",
       "versionInfo": "1.2.0",
-      "licenseConcluded": "GPL-2.0",
+      "licenseConcluded": "GPL-2.0-or-later OR LGPL-2.1-or-later",
       "downloadLocation": "https://github.com/artkeller/CYFRAM"
+    },
+    {
+      "SPDXID": "SPDXRef-CYFRAM-Pro-SPI",
+      "name": "CYFRAM_Pro (CY_SPI_FRAM)",
+      "versionInfo": "2.0.0",
+      "licenseConcluded": "GPL-2.0-or-later OR LGPL-2.1-or-later",
+      "downloadLocation": "https://github.com/artkeller/CYFRAM/tree/master/pro"
+    },
+    {
+      "SPDXID": "SPDXRef-CYFRAM-Pro-I2C",
+      "name": "CYFRAM_Pro (CY_I2C_FRAM)",
+      "versionInfo": "2.0.0",
+      "licenseConcluded": "GPL-2.0-or-later OR LGPL-2.1-or-later",
+      "downloadLocation": "https://github.com/artkeller/CYFRAM/tree/master/pro"
     },
     {
       "SPDXID": "SPDXRef-Wire",
@@ -20,6 +34,45 @@
       "versionInfo": "1.0",
       "licenseConcluded": "Arduino",
       "downloadLocation": "https://github.com/arduino/ArduinoCore-avr"
+    },
+    {
+      "SPDXID": "SPDXRef-SPI",
+      "name": "SPI",
+      "versionInfo": "1.0",
+      "licenseConcluded": "Arduino",
+      "downloadLocation": "https://github.com/arduino/ArduinoCore-avr"
+    }
+  ],
+  "relationships": [
+    {
+      "spdxElementId": "SPDXRef-DOCUMENT",
+      "relationshipType": "DESCRIBES",
+      "relatedSpdxElement": "SPDXRef-CYFRAM"
+    },
+    {
+      "spdxElementId": "SPDXRef-DOCUMENT",
+      "relationshipType": "DESCRIBES",
+      "relatedSpdxElement": "SPDXRef-CYFRAM-Pro-SPI"
+    },
+    {
+      "spdxElementId": "SPDXRef-DOCUMENT",
+      "relationshipType": "DESCRIBES",
+      "relatedSpdxElement": "SPDXRef-CYFRAM-Pro-I2C"
+    },
+    {
+      "spdxElementId": "SPDXRef-CYFRAM",
+      "relationshipType": "DEPENDS_ON",
+      "relatedSpdxElement": "SPDXRef-Wire"
+    },
+    {
+      "spdxElementId": "SPDXRef-CYFRAM-Pro-SPI",
+      "relationshipType": "DEPENDS_ON",
+      "relatedSpdxElement": "SPDXRef-SPI"
+    },
+    {
+      "spdxElementId": "SPDXRef-CYFRAM-Pro-I2C",
+      "relationshipType": "DEPENDS_ON",
+      "relatedSpdxElement": "SPDXRef-Wire"
     }
   ]
 }
