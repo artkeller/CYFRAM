@@ -22,6 +22,8 @@ CHANGELOG.md
 - New: `SIZING.md` (measured Flash/RAM footprint, Legacy vs. Pro, AVR/Uno; real `avr-gcc` builds against the unmodified ArduinoCore-avr, not estimates)
 - Governance documents extended to cover both tracks: `SBOM.md`, `SECURITY.md`, `THREAT_MODEL.md`, `Audit-Traceability-Matrix.md`, `CRA.md`, `MANUFACTURER_SELF_DECLARATION.md`
 - README.md rewritten to document the dual-track repository structure
+- **Correction (same day):** `SIZING.md`'s initial Legacy I2C measurement omitted a call to `FRAM_I2C_Current_Read()`, understating Legacy I2C Flash usage by 356 B (dead-code-eliminated by the linker since it was never called). Fixed by exercising the real usage pattern from `examples/FRAM_I2C_Example_2/FRAM_I2C_Example_2.ino`.
+- **Design decision documented:** `CY_I2C_FRAM` (Pro) intentionally does not carry over Legacy's `FRAM_I2C_Current_Read()` (current-address/sequential read). The chip-internal address pointer it relies on is unprotected on a shared I2C bus and can silently return data from the wrong address with no error signal — incompatible with Pro's bounds-checked, explicitly-addressed design goal. Documented with full rationale in `MIGRATION.md` and `SIZING.md`; Legacy remains available for code that needs this.
 
 ---
 

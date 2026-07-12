@@ -22,6 +22,16 @@ only `<Wire.h>` is included (`<Wire.h>` does not itself pull in
 `Arduino.h`, unlike `<SPI.h>`) — this is a build-harness detail, not a
 defect in either driver.
 
+Correction (2026-07-12): the first version of this measurement omitted
+a call to Legacy's `FRAM_I2C_Current_Read()` in the I2C test sketch,
+so the linker's `--gc-sections` dead-code elimination silently dropped
+that function and understated Legacy I2C's Flash usage by 356 B. The
+test sketch now mirrors the real usage pattern from
+`examples/FRAM_I2C_Example_2/FRAM_I2C_Example_2.ino` (random-read all
+but the last byte, then current-address-read the remainder) so every
+public Legacy I2C function is genuinely exercised. Figures below are
+the corrected ones.
+
 ## Results — AVR (ATmega328p / Uno)
 
 **Baseline** (Arduino core only, empty `setup()`/`loop()`, no FRAM library at all):
@@ -36,7 +46,7 @@ defect in either driver.
 |---|---|---|---|---|
 | Legacy — SPI (`CYSPIFRAM`) | 3012 B (9.2%) | 198 B (9.7%) | +974 B | +1 B |
 | **Pro** — SPI (`CY_SPI_FRAM`) | 3762 B (11.5%) | 213 B (10.4%) | +1724 B | +16 B |
-| Legacy — I2C (`CYI2CFRAM`) | 5552 B (16.9%) | 417 B (20.4%) | +3514 B | +220 B |
+| Legacy — I2C (`CYI2CFRAM`) | 5908 B (18.0%) | 417 B (20.4%) | +3870 B | +220 B |
 | **Pro** — I2C (`CY_I2C_FRAM`) | 6526 B (19.9%) | 436 B (21.3%) | +4488 B | +239 B |
 | Pro — SPI **and** I2C combined | 7468 B (22.8%) | 452 B (22.1%) | +5430 B | +255 B |
 | Legacy — SPI **and** I2C combined | *(not built — Legacy has no combined example; both drivers are trivially linkable together, expected ≈ sum minus shared core overhead, not separately verified)* | | | |
@@ -73,6 +83,25 @@ defect in either driver.
   SPI+I2C-combined Pro is the number to watch if the application is
   already RAM-constrained (e.g. large buffers, multiple Serial/String
   use) — worth profiling per-project rather than assuming headroom.
+
+## Design note (not a memory question, but found during this analysis)
+
+Legacy's I2C driver has a fourth function, `FRAM_I2C_Current_Read()`,
+that reads from wherever the F-RAM's internal address pointer currently
+sits — no address argument, a hardware-protocol shortcut for
+sequential reads without re-sending the address each time. It is
+demonstrated in `examples/FRAM_I2C_Example_2/FRAM_I2C_Example_2.ino`.
+
+**`CY_I2C_FRAM` (Pro) intentionally does not carry this over.** The
+address pointer lives inside the chip, not in the program, and I2C has
+no bus arbitration to protect it — any other access to the same chip
+(other code, an ISR, a second bus master, a retried transaction)
+silently moves the pointer without the next call noticing; the read
+still ACKs, it just returns data from the wrong address with no error
+code to catch it. That is incompatible with Pro's design goal of
+bounds-checked, explicitly-addressed operations, and with the
+shared-bus-safety finding in `THREAT_MODEL.md`. See `MIGRATION.md` for
+the full rationale and migration guidance for code that relies on it.
 
 ## ESP32 — not measured in this environment
 

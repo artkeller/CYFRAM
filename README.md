@@ -41,6 +41,14 @@ and target) in exchange for bounds checking, typed error codes, and
 bus-transaction safety — see [`SIZING.md`](./SIZING.md) for measured
 figures (AVR/Uno; ESP32 not measured, see note there).
 
+**By design, not by omission:** Pro's I2C driver does not implement an
+equivalent of Legacy's `FRAM_I2C_Current_Read()` (a hardware-protocol
+shortcut that reads from the chip's internal address pointer without
+sending an address). On a shared I2C bus that pointer can silently
+move between calls with no error signal — incompatible with Pro's
+bounds-checked, explicitly-addressed design. See
+[`MIGRATION.md`](./MIGRATION.md) for the full rationale.
+
 ## Installation
 
 **Legacy** (`CYFRAM`): as usual via the Arduino Library Manager, or as
@@ -62,7 +70,7 @@ practice, not under a commercial support contract. Key points:
   real hardware via logic-analyzer capture, see
   `examples/FRAM_SPI_Example_2/logic/` and
   `examples/FRAM_I2C_Example_2/logic/` for the Legacy captures.
-- This is a demo-scale library, not qualified for safety-related
+- This is a demo/hobby-scale library, not qualified for safety-related
   or life-critical use. See [`CRA_DISCLAIMER` section in `CRA.md`](./CRA.md)
   for the current legal scope assessment.
 - Vulnerability reporting: [`SECURITY.md`](./SECURITY.md).
