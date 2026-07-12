@@ -62,7 +62,7 @@ practice, not under a commercial support contract. Key points:
   real hardware via logic-analyzer capture, see
   `examples/FRAM_SPI_Example_2/logic/` and
   `examples/FRAM_I2C_Example_2/logic/` for the Legacy captures.
-- This is a demo/hobby-scale library, not qualified for safety-related
+- This is a demo-scale library, not qualified for safety-related
   or life-critical use. See [`CRA_DISCLAIMER` section in `CRA.md`](./CRA.md)
   for the current legal scope assessment.
 - Vulnerability reporting: [`SECURITY.md`](./SECURITY.md).
