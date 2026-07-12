@@ -2,9 +2,9 @@
 
 [![Language](https://img.shields.io/badge/language-🇬🇧%20English-informational)](./LANGUAGE.md)
 
-**Project:** CYFRAM Arduino Library (Legacy track `src/` + Pro track `pro/`)
-**Maintainer:** Individual Contributor (Non-commercial)
-**Date:** February 2026 (updated July 2026 for the Pro track)
+**Project:** CYFRAM Arduino Library (Legacy track `src/` + Pro track `pro/`)  
+**Maintainer:** Individual Contributor (Non-commercial)  
+**Date:** February 2026 (updated July 2026 for the Pro track)  
 
 ## 1. Scope
 
