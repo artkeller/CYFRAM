@@ -36,6 +36,11 @@ Summary (full detail: [`CHANGELOG.md`](./CHANGELOG.md)):
 - Examples for **AVR** (Uno/Nano/Mega, fixed SPI bus) and **ESP32**
   (freely mappable SPI/I2C pins, larger I2C chunk)
 
+Pro costs more Flash than Legacy (roughly +750–1700 B depending on bus
+and target) in exchange for bounds checking, typed error codes, and
+bus-transaction safety — see [`SIZING.md`](./SIZING.md) for measured
+figures (AVR/Uno; ESP32 not measured, see note there).
+
 ## Installation
 
 **Legacy** (`CYFRAM`): as usual via the Arduino Library Manager, or as
@@ -70,6 +75,7 @@ CYFRAM/
 ├── LICENSE                    <- GPLv2 / LGPLv2.1 (dual), unchanged
 ├── CHANGELOG.md                <- version history, both tracks
 ├── MIGRATION.md                 <- Legacy -> Pro migration guide
+├── SIZING.md                     <- measured Flash/RAM footprint, Legacy vs. Pro
 ├── CODESTYLE.md                  <- coding conventions (applies to both tracks)
 ├── LANGUAGE.md                     <- documentation/code language policy
 ├── SECURITY.md                      <- vulnerability reporting
