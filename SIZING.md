@@ -93,7 +93,7 @@ sequential reads without re-sending the address each time. It is
 demonstrated in `examples/FRAM_I2C_Example_2/FRAM_I2C_Example_2.ino`.
 
 **`CY_I2C_FRAM` (Pro) intentionally does not carry this over.** The
-address pointer lives inside the chip, not in the program, and I2C has
+address pointer lives **inside the chip**, not in the program, and I2C has
 no bus arbitration to protect it — any other access to the same chip
 (other code, an ISR, a second bus master, a retried transaction)
 silently moves the pointer without the next call noticing; the read
