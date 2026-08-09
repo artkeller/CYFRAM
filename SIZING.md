@@ -23,7 +23,7 @@ only `<Wire.h>` is included (`<Wire.h>` does not itself pull in
 defect in either driver.
 
 Correction (2026-07-12): the first version of this measurement omitted
-a call to Legacy's [`FRAM_I2C_Current_Read()`](#design-note--not-a-memory-question--but-found-during-this-analysis--in-the-I2C-test-sketch),
+a call to Legacy's [`FRAM_I2C_Current_Read()`](#design-note--not-a-memory-question--but-found-during-this-analysis--in-the-i2c-test-sketch),
 so the linker's `--gc-sections` dead-code elimination silently dropped
 that function and understated Legacy I2C's Flash usage by 356 B. The
 test sketch now mirrors the real usage pattern from
